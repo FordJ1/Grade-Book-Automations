@@ -34,7 +34,6 @@ emailsSplit.forEach(participant => {
 function copySheetsRenamed () {
   if (participantEmails.length != participantNames.length) {
     Logger.log('A length discrepancy has occured: Please verify the validity of the names and emails of the particpants.') 
-    break
   }
   participantNames.forEach(copySheet)  // function(item, index#, array)
 }
