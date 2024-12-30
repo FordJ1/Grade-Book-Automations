@@ -3,12 +3,11 @@ var yourSpreadsheetID = '13z3zFAGaJrpjMcWUyuV8kRAV4nJhazhH924ncIIQnK4'  // ID of
 var yourFolderID = '1sT8QwhXZLrkdX6KpgDmQXwfdFY1WDEZo'  // ID of folder containing participant spreadsheets
 var yourTargetRange = 'A1:G20'  // Range of gradebook cells you want visible to course participants 
 var courseCodeSemYear = 'PHYS152 S25'  // Sheet name visible only to course participants (this is the format that I would like to see on my end)
-var participantNames = []  // Processed from the CSV below in the form ['Last.First', 'Ford.Jonathan']
-var participantEmails = []  // Processed from the CSV below in the form ['first.last##@houghton.edu', 'jonathan.ford28@houghton.edu']
 
 // Prompt for input of unaltered CSV of course participant emails
 var emailsIn = prompt('CSV of participant emails\npaste CSV: ') 
-
+var participantNames = []  // Processed from the CSV below in the form ['Last.First', 'Ford.Jonathan']
+var participantEmails = []  // Processed from the CSV below in the form ['first.last##@houghton.edu', 'jonathan.ford28@houghton.edu']
 
 // Split the input CSV into an array
 var emailsSplit = emailsIn.split(',')
