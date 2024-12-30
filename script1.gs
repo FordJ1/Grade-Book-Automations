@@ -6,8 +6,8 @@ var courseCodeSemYear = 'PHYS152 S25'  // Sheet name visible only to course part
 
 // Prompt for input of unaltered CSV of course participant emails
 var emailsIn = prompt('CSV of participant emails\npaste CSV: ') 
-var participantNames = []  // Processed from the CSV below in the form ['Last.First', 'Ford.Jonathan']
-var participantEmails = []  // Processed from the CSV below in the form ['first.last##@houghton.edu', 'jonathan.ford28@houghton.edu']
+var participantNames = []  // Processed from the CSV in the form ['Last.First', 'Ford.Jonathan']
+var participantEmails = []  // Processed from the CSV in the form ['first.last##@houghton.edu', 'jonathan.ford28@houghton.edu']
 
 // Split the input CSV into an array
 var emailsSplit = emailsIn.split(',')
