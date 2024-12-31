@@ -36,3 +36,10 @@ This repository holds a a script that can automate the creation of gradebooks us
 ### 7. Allow access to the master gradebook for each participant
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/4b0e2c16-fa59-4b8f-9ade-7e1dd64ef34f" />
 
+### Class successfully deployed
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/36127902-8f59-4c07-828d-1443f509fdb5" />
+
+### 8. Repeat steps 1-7 for any other class
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/22d00ca3-a8d1-44a0-aef4-cc53c8020660" />
+
+
