@@ -1,8 +1,8 @@
 # Gradebook Automations
-## 1. Introduction
+## I. Introduction
 This repository holds a a script that can automate the creation of gradebooks using Apps Script by Google. The script is designed to efficiently communicate course progress to students participating in a course that uses mastery based grading.
 
-## 2. Overview – Functionality of Script
+## II. Overview – Functionality of Script
 ### Input/Requirements
 - A spreadsheet containing a course gradebook template – used to monitor participant progress 
 - A Google Drive folder that holds individual gradebooks for participants of all courses
@@ -14,7 +14,7 @@ This repository holds a a script that can automate the creation of gradebooks us
   - Files are automatically shared with respective course participant
   - Multiple courses are contained in seperate sheets/tabs w/in each participant's unique spreadsheet/file
 
-## 3. How to Run Locally
+## III. How to Run Locally
 ### 1. Create a Google Drive folder that will hold participant gradebooks from all courses
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/baf9d5de-7571-403b-a756-c840a2a7a033" />
 
@@ -36,8 +36,8 @@ This repository holds a a script that can automate the creation of gradebooks us
 ### 7. Allow access to the master gradebook for each participant
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/4b0e2c16-fa59-4b8f-9ade-7e1dd64ef34f" />
 
-### Class successfully deployed
-<img width="929" alt="image" src="https://github.com/user-attachments/assets/36127902-8f59-4c07-828d-1443f509fdb5" />
+#### Class successfully deployed
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/36127902-8f59-4c07-828d-1443f509fdb5" />
 
 ### 8. Repeat steps 1-7 for any other class
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/22d00ca3-a8d1-44a0-aef4-cc53c8020660" />
