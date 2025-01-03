@@ -1,6 +1,6 @@
 # Gradebook Automations
 ## I. Introduction
-This repository holds a a script that can automate the creation of gradebooks using Apps Script by Google. The script is designed to efficiently communicate course progress to students participating in a course that uses mastery based grading.
+This repository holds a a script that can automate the creation of gradebooks using Apps Script by Google. The script is designed to establish a system that efficiently communicates course progress to students participating in a course that uses mastery based grading.
 
 ## II. Overview – Functionality of Script
 ### Input/Requirements
