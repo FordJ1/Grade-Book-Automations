@@ -27,7 +27,7 @@ This repository holds a a script that can automate the creation of gradebooks us
 ### 4. Paste code from `script1.gs` into the `Untitled Project` and save
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/4f09f78b-b667-48e5-a7d7-a9a055872fc4" />
 
-### 5. Import service Drive API V2 as `Drive`
+### 5. Import service `Drive API v2` as `Drive`
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/99035e8e-fae1-4f45-a4eb-402e791a28de" />
 
 ### 6. Tailor the `Global Variables` to a specific course
