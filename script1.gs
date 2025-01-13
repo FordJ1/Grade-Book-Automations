@@ -3,9 +3,9 @@ var yourSpreadsheetID = '13z3zFAGaJrpjMcWUyuV8kRAV4nJhazhH924ncIIQnK4'  // ID of
 var yourFolderID = '1sT8QwhXZLrkdX6KpgDmQXwfdFY1WDEZo'  // ID of folder containing participant spreadsheets
 var yourTargetRange = 'A1:G20'  // Range of gradebook cells you want visible to course participants 
 var courseCodeSemYear = 'PHYS152 S25'  // Sheet name visible only to course participants (this is the format that I would like to see on my end)
+var emailsIn = 'first.last##@houghton.edu, jonathan.ford28@houghton.edu'
 
-// Prompt for input of unaltered CSV of course participant emails
-var emailsIn = prompt('CSV of participant emails\npaste CSV: ') 
+// Name handling
 var participantNames = []  // Processed from the CSV in the form ['Last.First', 'Ford.Jonathan']
 var participantEmails = []  // Processed from the CSV in the form ['first.last##@houghton.edu', 'jonathan.ford28@houghton.edu']
 
@@ -24,9 +24,29 @@ emailsSplit.forEach(participant => {
   var nameFirst = nameSplit[0]  // Grab first: before '.'
   var nameLast = nameSplit[1].slice(0, -2)  // Grab last: after '.', before the two numbers
 
-  var name = '${nameLast}.${nameFirst}'
+  nameFirst = Proper_Case(nameFirst)
+  nameLast = Proper_Case(nameLast)
+
+  // var name = '${nameLast}.${nameFirst}'
+  var name =  Utilities.formatString('%s.%s', nameLast, nameFirst)
   participantNames.push(name)
-});
+  Logger.log(name)
+})
+
+// Converts Names To Proper Case (so it looks peeerrrrtyyy)
+// https://spreadsheet.dev/how-to-convert-strings-to-proper-case-apps-script
+function Proper_Case (str) {
+  if (typeof str != "string")
+    throw `Expected string but got a ${typeof str} value.`;
+  
+  str = str.toLowerCase();
+
+  var arr = str.split(/.-:?—/ );
+  
+  return arr.reduce(function(val, current) {
+    return val += (current.charAt(0).toUpperCase() + current.slice(1));
+  }, "");
+}
 
 
 // Function manager enabling a forEach loop
